@@ -1,13 +1,92 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.container {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  margin: 2rem;
+}
+
+.header {
+  width: 100%;
+  height: 5rem;
+  background-color: #000000;
+  padding: 0 10%;
+}
+
+.header nav {
+  height: 100%;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.links {
+  margin: 0 1rem;
+  width: 5rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.header li:hover,
+.header li:active,
+.header li.active {
+  color: #fe8e27;
+  padding-bottom: 0.25rem;
+  border-bottom: 4px solid #fe8e27;
+  cursor: pointer;
+}
+
+.links:hover,
+.links:active {
+  color: #fe8e27;
+}
+
+.link__list li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.abouts {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.abouts:hover,
+.abouts:active {
+  color: #fe8e27;
+  cursor: pointer;
+}
+
+.logo {
+  width: 6rem;
+  position: relative;
+  top: 30px;
 }
